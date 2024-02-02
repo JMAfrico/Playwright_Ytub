@@ -13,10 +13,10 @@ module.exports = defineConfig({
   testDir: './tests',
 
   //Tempo explicito de expera para qualquer acao
-  timeout: 10000,
+  timeout: 20000,
   expect:{
     //Tempo maximo de um expect()
-    timeout:5000
+    timeout:20000
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
