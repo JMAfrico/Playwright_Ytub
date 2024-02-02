@@ -1,6 +1,6 @@
 //Aula 5, usando o Codegen npx playwright codegen google.com
 //https://www.youtube.com/watch?v=-F0eCZK_vxE&list=PLhW3qG5bs-L9sJKoT1LC5grGT77sfW0Z8&index=5
-const {test,expect} = require('@playwright/test')
+import {test,expect} from '@playwright/test';
 
 
 test('executar login com sucesso', async ({ page }) => {
