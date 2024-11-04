@@ -1,0 +1,15 @@
+{
+  "cookies": [
+    {
+      "name": "rack.session",
+      "value": "BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTM4ZmQzMGMwZTg1YWRlNzA5YTY0%0AYTY5MjI4NjAyZTlkN2VhZTgwNGNlNDVjMjI2N2FiMGQyMWM0MzM4OTQ4MzgG%0AOwBGSSIJY3NyZgY7AEZJIiVjMWRiOTMxYThiMTAxN2U3NTdlNTYxMWI1Nzll%0AOGNiMAY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi0xMWVlMDBjNDBhM2NlZDRlN2Y3ODkzZWE2MDRkNzFhNmYwZTQ5ZTY5%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--8d913fbaf20fbf5e916eb184d01fa66dc5144fde",
+      "domain": "the-internet.herokuapp.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

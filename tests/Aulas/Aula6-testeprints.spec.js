@@ -19,7 +19,7 @@ test.beforeAll(async({browser}) =>{
 test.afterAll(async()=>{
   await context.tracing.stop(
     {
-      path: 'testprint-trace2.zip'
+      path: 'testprint-trace3.zip'
     }
   )
 })

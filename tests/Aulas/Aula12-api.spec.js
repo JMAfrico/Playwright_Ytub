@@ -19,7 +19,7 @@ test('API get request failed', async ({ request }) => {
     expect(response.status()).toBe(404);
 })
 
-test.only('API get request lendo texto da response', async ({ request }) => {
+test('API get request lendo texto da response', async ({ request }) => {
     const response = await request.get('https://reqres.in/api/users/2');
 
     //qualquer resultado positivo de 200 a 299
@@ -94,3 +94,4 @@ test('API delete request', async ({ request }) => {
     expect(response.status()).toBe(204);  
 
 })
+

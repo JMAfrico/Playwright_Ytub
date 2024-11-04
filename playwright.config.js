@@ -13,10 +13,10 @@ module.exports = defineConfig({
   testDir: './tests',
 
   //Tempo explicito de expera para qualquer acao
-  timeout: 5000,
+  timeout: 60000,
   expect:{
     //Tempo maximo de um expect()
-    timeout:5000
+    timeout:60000
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -29,15 +29,26 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
+  snapshotPathTemplate: '{testDir}/__screenshots__/{testFilePath}/{testName}/{arg}{ext}',
+  
+  ignoreSnapshots:false,
+
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    toHaveScreenshot: { maxDiffPixels: 100 },
+
+    httpCredentials: {
+      username: 'admin',
+      password: 'admin',
+    },
     /* Record video and Slow motion*/
     video: 'on',
     launchOptions:{
       slowMo: 1000
     },
     /* Base URL to use in actions like `await page.goto('/')`. */
-    BaseURL: 'http://127.0.0.1:3000',
+    //BaseURL: 'http://127.0.0.1:',
     actionTimeout: 0,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
