@@ -27,8 +27,9 @@ test("teste 2 screenshot", async ({page}) => {
 });
 
 //dentro do after each chamar o método executa pdf
-test.afterEach(async ({}) => {
+test.afterEach(async ({page}) => {
   await createPDF();
+  await page.close();
 })
 
 

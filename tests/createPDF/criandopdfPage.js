@@ -28,7 +28,7 @@ export class CriaPDF{
     async clickBtnLogin(){
         console.log('Clicando em Login')
         await takescreenshot(this.page)
-        await this.page.locator('.button-1').click();
+        await this.page.locator('.button-6').click();
     }
 }
 

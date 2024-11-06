@@ -1,7 +1,5 @@
 import { test, expect } from '@playwright/test'
 import { parse } from 'csv-parse/sync';
-import { load, save } from '../../ler';
-const fs = require("fs");
 
 /* A classe tem 3 testes em sites diferente
 Executei com 'npx playwright test .\Aula8-Demotest.spec.js --headed'
@@ -59,12 +57,12 @@ test('Login demo test 4', async ({ page }) => {
    //const dados = fs.readFileSync('./input.csv'); 
 
    //Lê os dados do arquivo input.csv e coloca esses no log
-   const dados = load('input.csv')
+   //const dados = load('input.csv')
    console.log("AQQ", dados)
 
    await page.goto('https://demo.applitools.com/')
    //await page.pause()
-   await page.locator('[placeholder="Enter your username"]').fill(dados[0]);
+   await page.locator('[placeholder="Enter your username"]').fill('dados[0]');
    await page.locator('[placeholder="Enter your password"]').fill("dados[1]");
    //save(a);
    await page.locator('text=Sign in').click();
